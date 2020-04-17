@@ -24,6 +24,7 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
+
 </head>
   <body><script>
   window.fbAsyncInit = function() {
@@ -360,7 +361,15 @@
       </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
-      
+      <button id="viewProductButton">View Content</button>
+<script type="text/javascript">
+document.getElementById('viewProductButton').addEventListener('click', function() {
+fbq('track', 'ViewContent', {
+    value: 1,
+    currency: 'zar',
+    content_type: 'image',
+  }); false);
+</script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
