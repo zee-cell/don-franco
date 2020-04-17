@@ -25,7 +25,18 @@
 <!-- End Facebook Pixel Code -->
 
 </head>
-  <body class="">
+  <body><script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '3044775645579377',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+	  
       <header class="section page-header">
 			<nav class=" px-4 navbar navbar-expand-md navbar-dark bg-secondary mb-4">
           <a class="navbar-brand" href="don.html"><img  class="brand"src="img/70501970_939096076442088_7458816055079600128_n.jpg" alt="" width="150" height="150"></a>
