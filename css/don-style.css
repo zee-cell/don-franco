@@ -1,14 +1,4 @@
-@font-face {
-    font-family: 'Abel-Regular';
-    src: url('Abel-Regular.eot');
-    src: url('Abel-Regular.eot?#iefix') format('embedded-opentype'),
 
-        url('Abel-Regular.ttf') format('truetype'),
-        url('Abel-Regular.svg#Abel-Regular') format('svg');
-}
-*{
-    font-family: Abel-Regular !important;
-}
 
 :root{
     --main_color_2: #7B16D9;
@@ -600,7 +590,7 @@ html [class*=section-].section-bottom-0 {
  }
 }
 .bg-img-1 {
- background:url(../img/62224990_871383069880056_6346329331102384128_o.jpg) no-repeat top;
+ background:url(../gallery/pic16.jpg) no-repeat top;
  background-size:cover;
 }.bg-img-2 {
  background:url(../img/52953635_809479109403786_124285933955579904_o.jpg) no-repeat top;
@@ -1129,7 +1119,9 @@ a[href*=mailto] {
  background-color:rgba(240,245,75,.25);
  opacity:1;
  transition:all ease .25s;
- z-index:2
+ z-index:2;
+ background-image: url(../gallery/pattern.png);
+ 
 }
 @media(min-width:1200px) {
  .gallery-preview:before {
@@ -7904,6 +7896,28 @@ border-radius: 50%;
     left: 0;
     background-image: url(../gallery/pattern.png);
     background-repeat: repeat;
+}
+
+.box{
+background-image: url(../gallery/p9.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 80vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.content h1{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    box-shadow:0 0 23px 0 rgba(1,1,1,.1);
+    mix-blend-mode: overlay;
+}
+.content{
+    
+}
+.box-shadow{
+    box-shadow: 0px 0px 10px 3px #EEE;
 }
 
 
