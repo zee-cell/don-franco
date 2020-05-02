@@ -592,7 +592,9 @@ html [class*=section-].section-bottom-0 {
 .bg-img-1 {
  background:url(../gallery/pic16.jpg) no-repeat top;
  background-size:cover;
-}.bg-img-2 {
+}
+
+.bg-img-2 {
  background:url(../img/52953635_809479109403786_124285933955579904_o.jpg) no-repeat top;
  background-size:cover;
  background-attachment: fixed;  
@@ -1082,7 +1084,7 @@ a[href*=mailto] {
  left:50%;
  transform:translate(-50%,-50%);
  color:#d91d52;
- font-family:material design icons;
+ font-family: FontAwesome;
  font-size:40px;
  opacity:0;
  transition:all ease .25s;
@@ -1120,7 +1122,7 @@ a[href*=mailto] {
  opacity:1;
  transition:all ease .25s;
  z-index:2;
- background-image: url(../gallery/pattern.png);
+ /* background-image: url(../gallery/pattern.png); */
  
 }
 @media(min-width:1200px) {
@@ -1129,13 +1131,13 @@ a[href*=mailto] {
  }
 }
 .gallery-preview:after {
- content:'\f508';
+ content:'\f00e';
  position:absolute;
  top:50%;
  left:50%;
  transform:translate(-50%,-50%);
  color:#d91d52;
- font-family:material design icons;
+ font-family: Fontawesome;
  font-size:40px;
  opacity:1;
  transition:all ease .25s;
@@ -2433,10 +2435,10 @@ textarea.form-input {
  background-color:#fff
 }
 .thumbnail-modern .thumbnail-caption:before {
- content:'\e8e4';
- color:#f0f54b;
+ content:'\f064';
+ color:#d91d52b0;
  font-size:40px;
- font-family:material icons;
+ font-family: Fontawesome;
  position:absolute;
  bottom:0;
  transform:translate(-50%,50%) rotate(90deg);
@@ -5509,6 +5511,7 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
  visibility:hidden;
  line-height:0;
  height:0
+ 
 }
 .owl-carousel .owl-stage-outer {
  position:relative;
@@ -5541,8 +5544,8 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 .owl-carousel .owl-dots.disabled {
  display:none
 }
-.owl-carousel .owl-prev,
-.owl-carousel .owl-next,
+/* .owl-carousel .owl-prev,
+.owl-carousel .owl-next, */
 .owl-carousel .owl-dot {
  cursor:pointer;
  user-select:none;
@@ -5586,30 +5589,16 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 }
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
- position:absolute;
- top:50%;
- transform:translateY(-50%);
- display:flex;
- align-items:center;
- justify-content:center;
- width:40px;
- height:40px;
- border-radius:3px;
- font-size:40px;
- line-height:1;
- cursor:pointer;
- pointer-events:auto;
- background:#f0f54b;
- color:#18171b
-}
-.owl-carousel .owl-prev::before,
+display: none;
+} 
+/* .owl-carousel .owl-prev::before,
 .owl-carousel .owl-prev::after,
 .owl-carousel .owl-next::before,
 .owl-carousel .owl-next::after {
  display:block;
  font-family:fontawesome
-}
-.owl-carousel .owl-prev:hover,
+} */
+/* .owl-carousel .owl-prev:hover,
 .owl-carousel .owl-next:hover {
  text-decoration:none;
  background:#18171b;
@@ -5631,7 +5620,7 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 }
 .owl-carousel .owl-next::before {
  content:'\f105'
-}
+} */
 .owl-carousel .owl-dots {
  text-align:center
 }
@@ -7705,7 +7694,7 @@ border-radius: 50%;
     color: white;
     
 }
-.overlay{
+.ovderlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -7913,26 +7902,58 @@ justify-content: center;
     box-shadow:0 0 23px 0 rgba(1,1,1,.1);
     mix-blend-mode: overlay;
 }
-.content{
-    
-}
+
 .box-shadow{
     box-shadow: 0px 0px 10px 3px #EEE;
 }
+#home{
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-delay: .4ms;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#about{
+    animation-delay: 200ms;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+}
+.button-instagram{
+    background-image: linear-gradient(45DEG, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+button-facebook:hover{
+    -webkit-box-shadow: 0px 2px 0px 0px #2E4476;
+	box-shadow: 0px 2px 0px 0px #2E4476;
+}
+.bg-secondary {
+	background-color: #0e0f0fad !important;
+}
+.black{
+    display: flex;
+    align-items: end;
+    min-height: 80vh;
+    background-image: url(../gallery/pic16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header-images{
+    max-width: 100%;
+    max-height: 80%;
+}
+.header-images{
+    width: 400px !important;
+    height: 250px !important;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.robo{
+    font-family: roboto,times;s
+}
+.intro-body{
+    font-family: Roboto,Arial;
+}
 
 
 
